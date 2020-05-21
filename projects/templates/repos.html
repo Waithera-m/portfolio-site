@@ -1,0 +1,26 @@
+{% extends 'all-projects/base.html' %}
+{% load static %}
+
+{% block content %}
+    {{block.super}}
+    <div class="jumbotron">
+        <h1 class="text-center">Projects</h1>
+    </div>
+    <div class="container">
+        {% for project in projects %}
+        <div class="row" id="repo">
+            <div class="col-md-6" style="float: left;">
+                <h3>{{project.project_name}}</h3>
+                <p>{{project.description|truncatechars:70}}</p>
+                <a href="{{project.url}}" class="btn btn-dark">View Repo on GitHub</a>
+               
+            </div>
+            <div class="col-md-4"></div>
+        </div>
+        {% empty %}
+        <div class="row">
+            <h3>There are no Projects</h3>
+        </div>
+        {% endfor %}
+    </div>
+{% endblock %}
