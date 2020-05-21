@@ -2,7 +2,7 @@
 #### The web site displays some of the projects that the creator has worked on 
 #### By **Waithera-m**
 ## Description
-Partage is a simple django application that allows users to see some of the projects that the creator has worked on
+profile_site is a simple django application that allows users to see some of the projects that the creator has worked on
 
 ## Setup/Installation Requirements
 To use the application, users need internet access and web browsers, preferably  Chrome, Safari, and Firefox.
