@@ -27,10 +27,11 @@ To set up a local project:
 ![image](https://user-images.githubusercontent.com/60571734/82573571-9bd04380-9b8e-11ea-9ca1-c8817818ff05.png)
 
 #### Projects' Page
-![image](https://user-images.githubusercontent.com/60571734/82573634-b1456d80-9b8e-11ea-900c-6b948c7639f6.png)
+![image](https://user-images.githubusercontent.com/60571734/82574449-d5557e80-9b8f-11ea-9307-2e3f2abbe282.png)
 
 #### Details' Page
-![image](https://user-images.githubusercontent.com/60571734/82573792-e356cf80-9b8e-11ea-8b52-a2d89faa7a6c.png)
+![image](https://user-images.githubusercontent.com/60571734/82574830-5ca2f200-9b90-11ea-9ae3-4841e2944426.png)
+
 
 |Behavior                |Input                            |Output                             |
 |------------------------|----------------------------------|----------------------------------|
