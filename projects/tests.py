@@ -20,3 +20,5 @@ class RepoModelTests(TestCase):
         method checks if objects are initialized properly
         """
         self.assertTrue(isinstance(self.repo,Repo))
+    
+    
