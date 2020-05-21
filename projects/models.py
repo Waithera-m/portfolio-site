@@ -1,5 +1,6 @@
 from django.db import models
 import datetime
+from django.utils import timezone
 
 # Create your models here.
 class Repo(models.Model):
@@ -15,5 +16,13 @@ class Repo(models.Model):
 
     def __str__(self):
         return self.project_name
+
+    def was_added_recently(self):
+
+        """
+        method return recently added projects
+        """
+        now = timezone.now()
+        return now - datetime.timedelta(days=1) <= self.pub_date <= now
 
     

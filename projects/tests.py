@@ -1,6 +1,7 @@
 from django.test import TestCase
 from .models import Repo
 import datetime
+from django.utils import timezone
 
 class RepoModelTests(TestCase):
 
@@ -21,4 +22,12 @@ class RepoModelTests(TestCase):
         """
         self.assertTrue(isinstance(self.repo,Repo))
     
-    
+    def test_was_added_recently(self):
+
+        """
+        method tests if class' was_added_recently() returns true if a project with a pub_date that is less than a day is published
+        """
+        time = timezone.now() - datetime.timedelta(hours=23,minutes=59)
+        recent_project = Repo(pub_date=time)
+        self.assertIs(recent_project.was_added_recently(),True)
+
