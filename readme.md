@@ -27,13 +27,10 @@ To set up a local project:
 
 |Behavior                |Input                            |Output                             |
 |------------------------|----------------------------------|----------------------------------|
-|The landing page loads |Users scroll | Users see about section and button that redirects users to posts template|
-|The landing page loads|Users click on view posts button|Users see all submitted posts|
-|The landing page loads|Users click on sign in button|Users are directed to sign in/ register view, users sign in if they have an account or click on the sign up link to create an account|
-|The landing page loads|Users click on profile navbar link|Users see they profiles and options to edit or upload profile image|
-|The landing page loads|Users click on blog navbar link|Users see their profile image, username and list of all their blog posts|
-|The post page loads|Users click on read and comment link|Users see full post and options to edit, delete, or comment on post|
-|The landing page loads|Users click on sign out link in the navbar|Users are logged out|
+|The landing page loads |Users scroll | Users see creator's photo and greeting|
+|The landing page loads|Users click on project navbar link|Users are directed to projects template where they see all saved projects|
+|The projects page loads|Users click on learn more about project link |Users see details particular to a given project|
+|The details page loads|Users click on view repo link|Users are directed to the github repo associated with the project|
 ## Technologies Used
 * HTML - HTML dictates the structure of webpages.
 * CSS & Bootstrap - CSS determines the appearance of webpages. The styling language was used to add background images and colors and style the site's content.
