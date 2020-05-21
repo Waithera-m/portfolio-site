@@ -10,12 +10,12 @@
         {% for project in projects %}
         <div class="row" id="repo">
             <div class="col-md-6">
-                <img src="{{project.project_image.url}}" class="img-responsive" alt="" height="280" width="420" style="float: left;"> 
+                <img src="{{project.project_image.url}}" class="img-responsive" alt="" height="280" width="420"> 
             </div>
             <div class="col-md-6" style="float: left;">
                 <h3>{{project.project_name}}</h3>
                 <p>{{project.description|truncatechars:70}}</p>
-                <a href="{{project.url}}" class="btn btn-dark">View Repo on GitHub</a>
+                <a href="{% url 'projects:details' project.id %}" class="badge badge-dark">Learn More About This Project</a>
             </div>
         </div>
         {% empty %}

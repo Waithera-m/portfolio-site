@@ -8,7 +8,8 @@ app_name = 'projects'
 
 urlpatterns = [
     path('',views.index,name='index'),
-    path('projects/',views.projects,name='projects')
+    path('projects/',views.projects,name='projects'),
+    path('<int:pk>/',views.DetailView.as_view(), name="details"),
 ]
 if settings.DEBUG:
     urlpatterns+=static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)
