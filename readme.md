@@ -23,7 +23,14 @@ To set up a local project:
 ## Known Bugs
 * None at the moment.
 ## Behavior Driven Development (BDD)
+#### Landing Page
+![image](https://user-images.githubusercontent.com/60571734/82573571-9bd04380-9b8e-11ea-9ca1-c8817818ff05.png)
 
+#### Projects' Page
+![image](https://user-images.githubusercontent.com/60571734/82573634-b1456d80-9b8e-11ea-900c-6b948c7639f6.png)
+
+#### Details' Page
+![image](https://user-images.githubusercontent.com/60571734/82573792-e356cf80-9b8e-11ea-8b52-a2d89faa7a6c.png)
 
 |Behavior                |Input                            |Output                             |
 |------------------------|----------------------------------|----------------------------------|
