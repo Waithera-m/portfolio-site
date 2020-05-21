@@ -2,6 +2,7 @@ from django.test import TestCase
 from .models import Repo
 import datetime
 from django.utils import timezone
+from django.urls import reverse
 
 class RepoModelTests(TestCase):
 
