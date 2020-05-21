@@ -11,6 +11,7 @@ class Repo(models.Model):
     description = models.TextField(max_length=300)
     pub_date = models.DateTimeField(auto_now_add=True)
     url = models.CharField(max_length=100)
+    project_image = models.ImageField(upload_to='projects/%Y/%m%d',null=True)
 
     def __str__(self):
         return self.project_name
