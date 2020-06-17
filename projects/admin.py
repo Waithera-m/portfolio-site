@@ -1,5 +1,5 @@
 from django.contrib import admin
-from projects.models import Repo
+from projects.models import Repo, Languages
 
 # Register your models here.
 class RepoAdmin(admin.ModelAdmin):
@@ -8,4 +8,5 @@ class RepoAdmin(admin.ModelAdmin):
     list_display = ('project_name','pub_date')
     list_filter = ['pub_date']
 
-admin.site.register(Repo,RepoAdmin)
+admin.site.register(Repo, RepoAdmin)
+admin.site.register(Languages)
