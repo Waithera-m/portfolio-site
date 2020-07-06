@@ -9,7 +9,7 @@ def index(request):
     """
     view function returns the landing page
     """
-    return render(request,'all-projects/index.html')
+    return render(request, 'all-projects/index.html')
 
 def projects(request):
 
@@ -18,7 +18,7 @@ def projects(request):
     """
     projects = Repo.objects.all()
 
-    return render(request,'repos.html',{'projects':projects})
+    return render(request, 'repos.html',{'projects':projects})
 
 class DetailView(generic.DetailView):
 
@@ -28,3 +28,9 @@ class DetailView(generic.DetailView):
     model = Repo
     template_name = 'all-projects/detail.html'
     context_object_name = 'project'
+
+def skills(request):
+    """
+    view function renders template that display skills and contact information
+    """
+    return render(request, 'skills.html')

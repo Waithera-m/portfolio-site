@@ -8,7 +8,11 @@
         <nav class="navbar navbar-expand-md navbar-dark bg-black fixed-top">
             <div class="container-fluid">
                 <div class="navbar-header">
-                    <a class="navbar-brand" href="{% url 'projects:index' %}">Mary Njihia</a>
+                    <a class="navbar-brand" href="{% url 'projects:index' %}" style="font-size: 140%;">Mary Njihia</a>
+                </div>
+                <div class="navbar-right">
+                    <a href="{% url 'projects:projects' %}" style="color: white; font-size: 140%;">Projects</a>
+                    <a href="{% url 'projects:skills' %}" class='ml-2' style="color: white; font-size: 140%;">Skills</a>
                 </div>
             </div>
         </nav> 

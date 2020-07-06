@@ -3,25 +3,30 @@
 
 {% block content %}
     {{block.super}}
-    <div class="jumbotron">
+    <div class="jumbotron jumbotron-fluid">
         <h1 class="text-center">Projects</h1>
     </div>
     <div class="container">
-        {% for project in projects %}
-        <div class="row" id="repo">
-            <div class="col-md-6">
-                <img src="{{project.project_image.url}}" class="img-responsive" alt="" height="280" width="420"> 
+        <section id="gallery">
+            {% for project in projects %}
+            <div class="row" id="repo">
+                <div class="col-md-12" class='project'>
+                    <img src="{{project.project_image.url}}" class="img-fluid" alt="">
+                    <div class='overlay'>
+                        <div class="text">
+                            <p>{{project.description|truncatechars:31}}</p>
+                            <p><a href="{% url 'projects:details' project.id %}" class="badge badge-dark">Learn More</a></p>
+                        </div>
+                        
+                    </div> 
+                </div>
             </div>
-            <div class="col-md-6" style="float: left;">
-                <h3>{{project.project_name}}</h3>
-                <p>{{project.description|truncatechars:70}}</p>
-                <a href="{% url 'projects:details' project.id %}" class="badge badge-dark">Learn More About This Project</a>
+            {% empty %}
+            <div class="row">
+                <h3>There are no Projects</h3>
             </div>
-        </div>
-        {% empty %}
-        <div class="row">
-            <h3>There are no Projects</h3>
-        </div>
-        {% endfor %}
+            {% endfor %}
+        </section>
+        
     </div>
 {% endblock %}

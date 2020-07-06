@@ -1,0 +1,48 @@
+{% extends 'all-projects/base.html' %}
+{% load static %}
+
+{% block content %}
+{{block.super}}
+<div class="jumbotron">
+    <h1 class="text-center">Skills</h1>
+</div>
+<div class="container">
+    <div id='skills'>
+        <div class="row">
+            <div class="col-md-3">
+                <h3>Frameworks</h3>
+                <hr>
+                <p>Angular</p>
+                <p>Django</p>
+                <p>Flask</p>
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-3">
+                <h3>Languages</h3>
+                <hr>
+                <p>Python</p>
+                <p>Javascript</p>
+                <p>HTML</p>
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-3">
+                <h3>Tools</h3>
+                <hr>
+                <p>Git</p>
+                <p>CSS</p>
+                <p>Bootstrap</p>
+                <p>PostgreSQL</p>
+                <p>SQLite</p>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+    </div>
+</div>
+<div class="container" style="margin-top: 30px;">
+    <hr>
+    <h3 class="text-center">Get in Touch</h3>
+    <hr>
+    <p>Email: njihiamary11@gmail.com</a></p>
+    <a href="https://github.com/Waithera-m"><img src="https://bit.ly/2ACwQn4" class="img-fluid" height="20px" width="40px"></a>
+</div>
+{% endblock %}
