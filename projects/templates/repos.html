@@ -11,14 +11,7 @@
             {% for project in projects %}
             <div class="row" id="repo">
                 <div class="col-md-12" class='project'>
-                    <img src="{{project.project_image.url}}" class="img-fluid" alt="">
-                    <div class='overlay'>
-                        <div class="text">
-                            <p>{{project.description|truncatechars:31}}</p>
-                            <p><a href="{% url 'projects:details' project.id %}" class="badge badge-dark">Learn More</a></p>
-                        </div>
-                        
-                    </div> 
+                    <a href="{% url 'projects:details' project.id %}"><img src="{{project.project_image.url}}" class="img-fluid" alt=""></a>
                 </div>
             </div>
             {% empty %}
@@ -27,6 +20,5 @@
             </div>
             {% endfor %}
         </section>
-        
     </div>
 {% endblock %}

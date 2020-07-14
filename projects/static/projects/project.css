@@ -16,11 +16,11 @@ body {
 #gallery {
   line-height: 0;
   -webkit-column-count: 2;
-  -webkit-column-gap: 10px;
+  -webkit-column-gap: 30px;
   -moz-column-count: 2;
-  -moz-column-gap: 10px;
+  -moz-column-gap: 30px;
   column-count: 2;
-  column-gap: 10px;
+  column-gap: 30px;
 }
 
 #gallery img {
@@ -29,36 +29,10 @@ body {
   margin-bottom: 1px;
 }
 
-.overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: rgba(74, 117, 133, 0.7);
-  overflow: hidden;
+#gallery img:hover {
+  transform: scale(1.1);
 }
 
-.container:hover .overlay {
-  opacity: 1;
-  cursor: pointer;
-}
-
-.text {
-  color: white;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: left;
-}
-  
 @media (min-width: 576px) {
   .jumbotron {
     padding: 4rem 2rem;
