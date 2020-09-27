@@ -29,7 +29,19 @@ body {
   margin-bottom: 1px;
 }
 
-#gallery img:hover {
+.img-wrapper{
+  height: 500px;
+  width: 500px;
+  overflow: hidden;
+}
+
+.day {
+  transition: 0.1s;
+  height: 400px;
+  width: 400px;
+}
+
+.day:hover {
   transform: scale(1.1);
 }
 

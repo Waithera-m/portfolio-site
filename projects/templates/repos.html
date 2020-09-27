@@ -10,8 +10,8 @@
         <section id="gallery">
             {% for project in projects %}
             <div class="row" id="repo">
-                <div class="col-md-12" class='project'>
-                    <a href="{% url 'projects:details' project.id %}"><img src="{{project.project_image.url}}" class="img-fluid" alt=""></a>
+                <div class="col-md-12" class='project-wrapper'>
+                    <a href="{% url 'projects:details' project.id %}"><img src="{{project.project_image.url}}" class="img-fluid day" alt=""></a>
                 </div>
             </div>
             {% empty %}
